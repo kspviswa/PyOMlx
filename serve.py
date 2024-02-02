@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/serve', methods=['POST'])
 def serve():
     data = request.get_json()
-    result = firePrompt(model=data['model'], prompt=data['prompt'])
+    result = firePrompt(model=data['model'], prompt=data['prompt'], temp=data['temp'])
     return result
 
 @app.route('/')

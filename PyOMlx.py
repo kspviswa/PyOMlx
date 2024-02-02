@@ -5,7 +5,7 @@ import subprocess
 process = None
 
 def returnImage():
-    return Image.open(r'pyollama_1.png')
+    return Image.open(r'logo.png')
 
 def exit_app(icon, query):
     print('inside exit')

@@ -1,0 +1,6 @@
+- [x] Basic working setup
+- [ ] Provide a MacOS App (.dmg) file
+- [ ] List models
+- [ ] Support [Open AI chat_completions endpoint](https://platform.openai.com/docs/api-reference/chat/create)
+- [ ] Support authentication
+- [ ] Support Caching

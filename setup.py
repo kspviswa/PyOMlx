@@ -10,14 +10,13 @@ from setuptools import setup
 APP = ['PyOMlx.py']
 DATA_FILES = ['LICENSE',
  'README.md',
- '__pycache__',
  'prompt.py',
  'logo.jpeg',
  'logo.png',
  'requirements.txt',
  'serve.py',
  'serveTest.py']
-OPTIONS = {'iconfile':'logo.icns'}
+OPTIONS = {'iconfile':'logo.icns', 'use_pythonpath' : True}
 
 setup(
     app=APP,

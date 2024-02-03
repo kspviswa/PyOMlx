@@ -9,7 +9,7 @@ I'm using these in my day to day workflow and I intend to keep develop these for
 
 If you find this valuable, feel free to use it and contribute to this project as well. Please ⭐️ this repo to show your support and make my day!
 
-I'm planning on work on next items on this roadmap.md[roadmap.md]. Feel free to comment your thoughts (if any) and influence my work (if interested)
+I'm planning on work on next items on this [roadmap.md](roadmap.md). Feel free to comment your thoughts (if any) and influence my work (if interested)
 
 ## How to use
 

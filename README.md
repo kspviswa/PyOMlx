@@ -21,6 +21,10 @@ MacOS DMGs are available in [Releases](https://github.com/kspviswa/PyOMlx/releas
 
 3) You will now see the application running in the system tray. Use [PyOllaMx](https://github.com/kspviswa/pyOllaMx) to chat with MLX models seamlessly
 
+## Demo
+
+https://github.com/kspviswa/pyOllaMx/assets/7476271/dc686d60-182d-4f90-a771-9c1df1c70b5c
+
 ## Features
 
 - Automatically discover & serve MLX models that are downloaded from [MLX Huggingface community](https://huggingface.co/mlx-community).

@@ -5,7 +5,7 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[('logo.png', 'icons'), ('serve.py', 'scripts'), ('prompt.py', 'scripts')],
+    datas=[('logo.png', '.'), ('serve.py', '.'), ('prompt.py', '.')],
     hiddenimports=['tiktoken'],
     hookspath=[],
     hooksconfig={},

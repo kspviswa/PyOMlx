@@ -4,8 +4,8 @@ import subprocess
 import os
 
 basedir = os.path.dirname(__file__)
-script_path = (os.path.join(basedir, "scripts", "serve.py"))
-process = subprocess.Popen(['python3', script_path])
+script_path = (os.path.join(basedir, "serve.py"))
+process = subprocess.Popen(['python3', script_path], cwd=basedir)
 
 app = QApplication([])
 app.setQuitOnLastWindowClosed(False)
@@ -17,7 +17,7 @@ def stopServer():
     app.quit()
 
 # Create the icon
-icon = QIcon(os.path.join(basedir, "icons", "logo.png"))
+icon = QIcon(os.path.join(basedir, "logo.png"))
 
 # Create the tray
 tray = QSystemTrayIcon()

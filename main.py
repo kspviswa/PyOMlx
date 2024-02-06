@@ -4,16 +4,16 @@ import subprocess
 import os
 
 basedir = os.path.dirname(__file__)
-script_path = (os.path.join(basedir, "serve.py"))
-process = subprocess.Popen(['python3', script_path], cwd=basedir)
+script_base_path = os.path.join(basedir, "scripts")
+script_path = (os.path.join(basedir, "scripts", "launch.sh"))
+subprocess.run(['/bin/sh', script_path, script_base_path])
 
 app = QApplication([])
 app.setQuitOnLastWindowClosed(False)
 
 def stopServer():
-    global process
-    process.terminate()
-    process.wait()
+    stop_script_path = (os.path.join(basedir, "scripts", "stop.sh"))
+    subprocess.run(['/bin/sh', stop_script_path])
     app.quit()
 
 # Create the icon

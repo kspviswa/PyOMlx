@@ -46,7 +46,7 @@ app = BUNDLE(
     name='PyOMlx.app',
     icon='logo.icns',
     bundle_identifier=None,
-    version='0.0.1',
+    version='0.0.2',
     info_plist={
         'NSPrincipalClass': 'NSApplication',
         'NSAppleScriptEnabled': False,

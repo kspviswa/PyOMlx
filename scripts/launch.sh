@@ -16,12 +16,12 @@ else
     cd $PYOMLX_HOME
     python3 -m venv .venv
     . .venv/bin/activate
-    pip install flask
-    pip install mlx-lm
-    pip install tiktoken
     cp $SCRIPT_HOME/*.py .
+    cp $SCRIPT_HOME/*.txt .
+    $PYOMLX_VENV/bin/pip install -r requirements.txt
+    
 fi
 
-nohup python3 ./serveMlxPrompt.py > /dev/null 2>&1 &
+nohup $PYOMLX_VENV/bin/python ./serveMlxPrompt.py > /dev/null 2>&1 &
 pid=$!
 echo $pid > $FLASK_APP_PID_FILE

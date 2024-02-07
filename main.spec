@@ -5,7 +5,7 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[('logo.png', '.'), ('scripts/launch.sh', 'scripts'), ('scripts/stop.sh', 'scripts'), ('scripts/serveMlxPrompt.py', 'scripts')],
+    datas=[('logo.png', '.'), ('scripts/launch.sh', 'scripts'), ('scripts/stop.sh', 'scripts'), ('scripts/serveMlxPrompt.py', 'scripts'), ('scripts/requirements.txt', 'scripts')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

@@ -1,5 +1,5 @@
 from PySide6.QtGui import QIcon, QAction
-from PySide6.QtWidgets import QApplication, QSystemTrayIcon, QMenu
+from PySide6.QtWidgets import QApplication, QSystemTrayIcon, QMenu, QMessageBox
 import subprocess
 import os
 
@@ -16,6 +16,11 @@ def stopServer():
     subprocess.run(['/bin/sh', stop_script_path])
     app.quit()
 
+def showAbout():
+    ab = QMessageBox()
+    ab.setText("PyOMlx \n\n Version 0.0.2 \n Copyright Viswa Kumar ©️ 2024")
+    ab.exec()
+
 # Create the icon
 icon = QIcon(os.path.join(basedir, "logo.png"))
 
@@ -27,7 +32,10 @@ tray.setVisible(True)
 # Add a Quit option to the menu.
 menu = QMenu()
 quit = QAction("Quit")
+about = QAction('About')
 quit.triggered.connect(stopServer)
+about.triggered.connect(showAbout)
+menu.addAction(about)
 menu.addAction(quit)
 
 # Add the menu to the tray

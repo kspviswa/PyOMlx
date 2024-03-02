@@ -27,4 +27,10 @@ https://github.com/kspviswa/pyOllaMx/assets/7476271/dc686d60-182d-4f90-a771-9c1d
 
 ## Features
 
+### [v0.0.3](https://github.com/kspviswa/PyOMlx/releases/tag/0.0.1)
+- Updated `mlx-lm` to support Gemma models
+
+### [v0.0.1](https://github.com/kspviswa/PyOMlx/releases/tag/0.0.1)
 - Automatically discover & serve MLX models that are downloaded from [MLX Huggingface community](https://huggingface.co/mlx-community).
+- Easy start-up / shutdown via MacOS App
+- System tray indication

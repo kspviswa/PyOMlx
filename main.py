@@ -18,7 +18,7 @@ def stopServer():
 
 def showAbout():
     ab = QMessageBox()
-    ab.setText("PyOMlx \n\n Version 0.0.2 \n Copyright Viswa Kumar ©️ 2024")
+    ab.setText("PyOMlx \n\n Version 0.1.0 \n Copyright Viswa Kumar ©️ 2024")
     ab.exec()
 
 # Create the icon

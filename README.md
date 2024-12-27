@@ -27,7 +27,25 @@ https://github.com/kspviswa/pyOllaMx/assets/7476271/dc686d60-182d-4f90-a771-9c1d
 
 ## Features
 
-### [v0.0.3](https://github.com/kspviswa/PyOMlx/releases/tag/0.0.1)
+### [v0.1.0](https://github.com/kspviswa/PyOMlx/releases/tag/0.1.0)
+- Added OpenAI API Compatible [chat completions](https://platform.openai.com/docs/api-reference/chat/create) and [list models](https://platform.openai.com/docs/api-reference/models/list) endpoint.
+- Added `/download` endpoint to download MLX models directly from HuggingFace Hub. All models will be downloaded from [MLX Community](https://huggingface.co/mlx-community) in HF Hub.
+- Added `/swagger.json` endpoint to serve OpenAPI Spec of all endpoints available with PyOMlx
+
+Now you can simply use any standard OpenAI Client to interact with MLX models by setting `base_url` property.
+
+```python
+# pip install openai
+
+from openai import OpenAI
+client = OpenAI(base_url='http://127.0.0.1:11434/v1', api_key='pyomlx')
+response = client.chat.completions.create(model="mlx-community/Phi-3-mini-4k-instruct-4bit", 
+                                          messages=[{'role':'user', 'content':'how are you?'}])
+print(response.choices[0].message.content)
+```
+Enjoy! 😊
+
+### [v0.0.3](https://github.com/kspviswa/PyOMlx/releases/tag/0.0.3)
 - Updated `mlx-lm` to support Gemma models
 
 ### [v0.0.1](https://github.com/kspviswa/PyOMlx/releases/tag/0.0.1)

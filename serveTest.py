@@ -13,7 +13,7 @@ from openai import OpenAI
 #print(response.status_code)
 #print(response.text)
 
-client = OpenAI(base_url='http://127.0.0.1:11434/v1', api_key='pyomlx')
+client = OpenAI(base_url='http://127.0.0.1:11435/v1', api_key='pyomlx')
 response = client.chat.completions.create(model="mlx-community/Phi-3-mini-4k-instruct-4bit", 
                                           messages=[{'role':'user', 'content':'how are you?'}])
 print(response.choices[0].message.content)

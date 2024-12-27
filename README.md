@@ -34,13 +34,19 @@ rm -rf ~/.pyomlx
 - Added `/download` endpoint to download MLX models directly from HuggingFace Hub. All models will be downloaded from [MLX Community](https://huggingface.co/mlx-community) in HF Hub.
 - Added `/swagger.json` endpoint to serve OpenAPI Spec of all endpoints available with PyOMlx
 
+> [!NOTE]
+> PyOMlx endpoints are bounded to port 11435. Please make sure that port is not used
+
+> [!NOTE]
+> PyOMlx binds to all available IPs. CORS support is NOT ADDED.
+
 Now you can simply use any standard OpenAI Client to interact with MLX models by setting `base_url` property.
 
 ```python
 # pip install openai
 
 from openai import OpenAI
-client = OpenAI(base_url='http://127.0.0.1:11434/v1', api_key='pyomlx')
+client = OpenAI(base_url='http://127.0.0.1:11435/v1', api_key='pyomlx')
 response = client.chat.completions.create(model="mlx-community/Phi-3-mini-4k-instruct-4bit", 
                                           messages=[{'role':'user', 'content':'how are you?'}])
 print(response.choices[0].message.content)

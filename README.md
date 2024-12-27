@@ -17,13 +17,15 @@ MacOS DMGs are available in [Releases](https://github.com/kspviswa/PyOMlx/releas
 
 1) [Download](https://github.com/kspviswa/PyOMlx/releases) & Install the PyOMlx MacOS App
 
-2) Run the app
+2) Clean up old installation if exists
 
-3) You will now see the application running in the system tray. Use [PyOllaMx](https://github.com/kspviswa/pyOllaMx) to chat with MLX models seamlessly
+```bash
+rm -rf ~/.pyomlx
+```
 
-## Demo
+3) Run the app
 
-https://github.com/kspviswa/pyOllaMx/assets/7476271/dc686d60-182d-4f90-a771-9c1df1c70b5c
+4) You will now see the application running in the system tray. Use [PyOllaMx](https://github.com/kspviswa/pyOllaMx) to chat with MLX models seamlessly
 
 ## Features
 
@@ -52,3 +54,7 @@ Enjoy! 😊
 - Automatically discover & serve MLX models that are downloaded from [MLX Huggingface community](https://huggingface.co/mlx-community).
 - Easy start-up / shutdown via MacOS App
 - System tray indication
+
+## Demo
+
+https://github.com/kspviswa/pyOllaMx/assets/7476271/dc686d60-182d-4f90-a771-9c1df1c70b5c

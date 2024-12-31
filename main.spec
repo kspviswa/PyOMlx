@@ -5,7 +5,7 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[('logo.png', '.'), ('scripts/launch.sh', 'scripts'), ('scripts/stop.sh', 'scripts'), ('scripts/serveMlxPrompt.py', 'scripts'), ('scripts/requirements.txt', 'scripts')],
+    datas=[('logo.png', '.'), ('scripts/launch.sh', 'scripts'), ('scripts/stop.sh', 'scripts'), ('scripts/requirements.txt', 'scripts')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -46,7 +46,7 @@ app = BUNDLE(
     name='PyOMlx.app',
     icon='logo.icns',
     bundle_identifier=None,
-    version='0.1.0',
+    version='0.1.1',
     info_plist={
         'NSPrincipalClass': 'NSApplication',
         'NSAppleScriptEnabled': False,

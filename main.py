@@ -2,14 +2,24 @@ from PySide6.QtGui import QIcon, QAction
 from PySide6.QtWidgets import QApplication, QSystemTrayIcon, QMenu, QMessageBox
 import subprocess
 import os
+import sys
 
 basedir = os.path.dirname(__file__)
 script_base_path = os.path.join(basedir, "scripts")
 script_path = (os.path.join(basedir, "scripts", "launch.sh"))
-subprocess.run(['/bin/sh', script_path, script_base_path])
+result = subprocess.run(['/bin/bash', script_path, script_base_path])
 
 app = QApplication([])
 app.setQuitOnLastWindowClosed(False)
+
+if result.returncode == 1:
+    QMessageBox.critical(
+        None,  # Parent widget (None means it will be a top-level window)
+        "Error",  # Title of the message box
+        "PyOMlx cannot be started due to some error. Check logs in /tmp/pyomlx-*.log",  # Message text
+        QMessageBox.Ok  # Buttons to display
+    )
+    sys.exit(1)
 
 def stopServer():
     stop_script_path = (os.path.join(basedir, "scripts", "stop.sh"))

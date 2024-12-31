@@ -2,10 +2,10 @@
 
 PYOMLX_HOME="$HOME/.pyomlx"
 PYOMLX_VENV="$PYOMLX_HOME/.venv"
-FLASK_APP_PID_FILE="pid.txt"
+PYOMLX_SERVER_PID="pid.txt"
 SCRIPT_HOME=$(pwd)
 
-pid=$(cat "$PYOMLX_HOME/$FLASK_APP_PID_FILE")
+pid=$(cat "$PYOMLX_HOME/$PYOMLX_SERVER_PID")
 kill -9 $pid
 echo "Stopped.."
 

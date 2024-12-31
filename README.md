@@ -29,6 +29,12 @@ rm -rf ~/.pyomlx
 
 ## Features
 
+### [v0.1.1](https://github.com/kspviswa/PyOMlx/releases/tag/0.1.1)
+- Revamped the http server portion to use the `mlx_lm.server` module. As of the latest version (`v0.20.5`) the module accepts dynamic model information from the incoming request. Hence this can be better utilized by PyOMlx. Also the `load()` function supports automatic model download from HF if not available in local `~/.cache `directory. This replaces the `/download` endpoint.
+- Finally, since `mlx_lm.server` runs a `httpd`, there is no need for external `flask`. So I got rid of that too. Resulting PyOMlx binary is very slim (~100 MB) and much much faster.
+- Rest everything is same as [v0.1.0](https://github.com/kspviswa/PyOMlx/releases/tag/0.1.0)
+
+
 ### [v0.1.0](https://github.com/kspviswa/PyOMlx/releases/tag/0.1.0)
 - Added OpenAI API Compatible [chat completions](https://platform.openai.com/docs/api-reference/chat/create) and [list models](https://platform.openai.com/docs/api-reference/models/list) endpoint.
 - Added `/download` endpoint to download MLX models directly from HuggingFace Hub. All models will be downloaded from [MLX Community](https://huggingface.co/mlx-community) in HF Hub.

@@ -17,15 +17,9 @@ MacOS DMGs are available in [Releases](https://github.com/kspviswa/PyOMlx/releas
 
 1) [Download](https://github.com/kspviswa/PyOMlx/releases) & Install the PyOMlx MacOS App
 
-2) Clean up old installation if exists
+2) Run the app
 
-```bash
-rm -rf ~/.pyomlx
-```
-
-3) Run the app
-
-4) You will now see the application running in the system tray. Use [PyOllaMx](https://github.com/kspviswa/pyOllaMx) to chat with MLX models seamlessly
+3) You will now see the application running in the system tray. Use [PyOllaMx](https://github.com/kspviswa/pyOllaMx) to chat with MLX models seamlessly
 
 ## Features
 

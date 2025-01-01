@@ -2,6 +2,8 @@
 # PyOMlx
 ### Serve MlX models locally!
 
+### ![Downloads](https://img.shields.io/github/downloads/kspviswa/PyOMlx/total.svg)
+
 ## Motivation
 Inspired by [Ollama](https://github.com/ollama/ollama) project, I wanted to have a similar experience for serving [MLX models](https://github.com/ml-explore/mlx-examples). [Mlx from ml-explore](https://github.com/ml-explore/mlx) is a new framework for running ML models in Apple Silicon. This app is intended to be used along with [PyOllaMx](https://github.com/kspviswa/pyOllaMx)
 
